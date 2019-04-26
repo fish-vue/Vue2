@@ -1,4 +1,4 @@
-medol层通过vue框架来指挥view。
+model层通过vue框架来指挥view。
 
 view层触发事件来修改数据
 
@@ -23,3 +23,7 @@ example1.items = example1.items.filter(function (item) {
   return item.message.match(/Foo/)
 })
 ```
+
+## tips
+我去，data中，如果变量名是`_`开头的，比如说是`_title``，是无法被observer的！！
+为什么？computed之类的呢？
